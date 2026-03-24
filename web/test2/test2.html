@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #book-cover {
+        width: 640px;
+        /* height: 740px; */
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        border-color: blackblack;
+        padding: 0;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #peasron {
+        position: relative;
+        top: 10px;
+        left: 500px;
+        width: 100px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('./实验2-实验素材/实验2-2/pearson.png');
+    }
+
+    #loutor {
+        margin: 40px auto 10px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background-image: url('./实验2-实验素材/实验2-2/lotus-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    #explain {
+        color: azure;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #word {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 100px;
+    }
+
+    li {
+        font-size: 20px;
+        padding-left: 25px;
+        background-image: url("实验2-实验素材/实验2-2/list-image.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    #publicer {
+        /* position: relative; */
+        height: 50px;
+        width: 150px;
+        background-image: url('实验2-实验素材/实验2-2/tsinghua.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #version {
+        width: 250px;
+        height: 50px;
+        padding: 10px;
+        padding-top: 10px;
+        margin: 10px;
+        color: aliceblue;
+        background-color: rgb(245, 117, 20);
+        transform: rotate(45deg);
+        text-align: center;
+        margin-left: -55px;
+        
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="book-cover">
+        <div id="pearson"></div>
+        <div id="loutor"></div>
+        <div>
+            <p id="explain">dgsdygjdgjgdwj wjhduawdh</p>
+            <h2 id="t1" style="font-size: 80px;">学习HTML5</h2>
+        </div>
+        <div id="word">
+            <ul id="left">
+                <li>adeyrjw</li>
+                <li>sdawdrgh</li>
+                <li>aserera</li>
+                <li>awersga</li>
+                <li>aefthtwa</li>
+            </ul>
+            <div id="right">
+                <div>shaus额诶会饿师傅 著</div>
+                <div>sdhswd 译</div>
+                </>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="version">第七版</div>
+            <div id="publisher"></div>
+        </div>
+</body>
+
+</html>

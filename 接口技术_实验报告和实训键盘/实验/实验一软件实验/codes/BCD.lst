@@ -1,0 +1,72 @@
+Turbo Assembler	 Version 4.1	    11/10/25 15:38:30	    Page 1
+BCD.asm
+
+
+
+      1	0000				     .MODEL  TINY
+      2	0000				     .STACK  100
+      3	0000				     .DATA
+      4	0000  00 05 06 03 08 92	04+  TAB_1:		     DB	     0H,5H,6H,3H,8H,92H,04H,57H,46H,01H,0FFH,0A0H,45H,99H,55H,66H
+      5	      57 46 01 FF A0 45	99+
+      6	      55 66
+      7	0010				     .CODE
+      8	0000  B8 0000s		     START:  MOV     AX,@DATA
+      9	0003  8E D8			     MOV     DS,AX
+     10	0005  90			     NOP
+     11	0006  B9 000F			     MOV     CX,16 - 1	     ;存放比较次数 = 数据个数 -	1
+     12	0009  51		     STAR2:  PUSH	     CX
+     13	000A  BE 0000r			     LEA     SI,TAB_1
+     14	000D  B2 00			     MOV     DL,0	     ;0->交换过数据标志
+     15	000F  AC		     STAR3:  LODSB
+     16	0010  8A 24			     MOV	     AH,[SI]
+     17	0012  3A E0			     CMP     AH,AL
+     18	0014  73 07			     JNB	     STAR5
+     19	0016  88 04			     MOV	     [SI],AL
+     20	0018  88 64 FF			     MOV     [SI - 1],AH
+     21	001B  B2 01			     MOV	     DL,1	     ;1->交换过数据标志
+     22	001D  E2 F0		     STAR5:  LOOP	     STAR3
+     23	001F  59			     POP	     CX
+     24	0020  80 FA 00			     CMP     DL,0
+     25	0023  74 02			     JZ	     Exit
+     26	0025  E2 E2			     LOOP    STAR2
+     27	0027  EB FE		     Exit:   JMP	     $
+     28
+     29					     END     START
+Turbo Assembler	 Version 4.1	    11/10/25 15:38:30	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "11/10/25"
+??FILENAME			  Text	 "BCD	  "
+??TIME				  Text	 "15:38:30"
+??VERSION			  Number 040A
+@32BIT				  Text	 0
+@CODE				  Text	 DGROUP
+@CODESIZE			  Text	 0
+@CPU				  Text	 0101H
+@CURSEG				  Text	 _TEXT
+@DATA				  Text	 DGROUP
+@DATASIZE			  Text	 0
+@FILENAME			  Text	 BCD
+@INTERFACE			  Text	 000H
+@MODEL				  Text	 1
+@STACK				  Text	 DGROUP
+@WORDSIZE			  Text	 2
+EXIT				  Near	 DGROUP:0027
+STAR2				  Near	 DGROUP:0009
+STAR3				  Near	 DGROUP:000F
+STAR5				  Near	 DGROUP:001D
+START				  Near	 DGROUP:0000
+TAB_1				  Near	 DGROUP:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  STACK				  16  0064 Para	  Stack	  STACK
+  _DATA				  16  0010 Word	  Public  DATA
+  _TEXT				  16  0029 Word	  Public  CODE
+

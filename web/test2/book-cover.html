@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务二：图书封面</title>
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .book-cover {
+            width: 640px;
+            /* height: 877px; */
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+            border:2px solid  #333;
+            /* box-shadow: #333; */
+        }
+        .pearson{
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            top: 40px;
+            left: 500px;
+            background-image: url('./实验2-实验素材/实验2-2/pearson.png');
+            background-position: center;
+            background-size: contain;
+        }
+        .lotus {
+            margin: 40px auto 10px; 
+            width: 350px;
+            height: 350px;
+            background-image: url('./实验2-实验素材/实验2-2/lotus-2.jpg');
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+        }
+        /* .title{
+            width: 1240px;
+            height: 75px;
+            position: relative;
+            flex-direction: row;
+            display: flex;
+        } */
+         .title{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+         }
+        .book-subtitle{
+            margin-top: 20px;/*???必须强制下移吗*/
+            color: #777676;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .book-title{
+            font-size: 75px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .book-title2{
+            font-size: 100px;
+            font-weight: 600;
+            color: rgb(15, 167, 91);
+            margin: 0;
+            padding: 0;
+            
+        }
+        .explain{
+            line-height: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            position:relative;
+            display: flex;
+            flex: 1 1 auto;
+        }
+        .A_T{
+            font-weight: 1000;
+            transform: translateX(-40px);/*flex 容器空间不足​时margin-left不行，transform更可靠*/            
+        }
+        .translator{
+            text-align: right;
+        }
+        li{
+            font-size: 15px;
+            background-image: url("实验2-实验素材/实验2-2/list-image.png");
+            padding-left: 25px;
+            margin-left:35px;/*盒子整体右移*/
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .seven{
+            margin: 10px;
+            padding: 10px;
+            height:50px;
+            width: 200px;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            background-color: red;
+            transform: rotate(45deg);
+            margin-left: -75px;
+        }
+        .publisher {
+            position: absolute;
+            top: 720px;    /* 向下移动20px */
+            left: 400px;
+            height: 25px;
+            width: 170px;
+            background-image: url('实验2-实验素材/实验2-2/tsinghua.png');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            text-align: right;
+            background-size: contain;
+            
+        }
+    </style>
+<body>
+    <div class="book-cover">
+        <div class="pearson"></div>
+        <div class="lotus">
+        </div>
+        <p class="book-subtitle">Web Development &Desgin Foundations with HTML5,7th Edition</p>
+        <div class="title">        
+            <span class="book-title" >学习</span>
+            <span class="book-title2">HTML5</span>
+        </div>
+        <div class="explain">
+            <ul class="decorative-line">
+                <li>网页设计与开发入门经典最新版</li>
+                <li>教育学博士&网页设计专家出品</li>
+                <li>全面覆盖，深入讲解HTML5所有相关主题</li>
+                <li>知识点，自测题。100+动手练习，267道复习题</li>
+                <li>四大案例：咖啡屋，宠物医院，度假村，房产公司</li>
+                <li>由浅入深，循序渐进，旨在有效锻炼读者的实操能力</li>
+            </ul>
+            <ul class="A_T">
+                <div class="author">Terry Felke-Morris 著</div>
+                <div class="translator">潘玉琪 译</div>
+            </ul>
+        </div>
+        <div class="bottom">
+            <div class="seven">（第7版）</div>
+            <div class="publisher">出版社</div>
+        </div>
+    </div>
+        
+
+</body>
+</html>

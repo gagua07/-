@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighthouse Island Bistro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%; 
+            padding: 5px;
+            display: flex; 
+            flex-direction: column;
+            background-color: #00005d;
+        }
+        .title {
+            background-color: #869dc7;
+            text-align: left;
+            height: 90px;
+        }
+        .menu {
+            background-color: #b3c7e6;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            width: 100px;
+            /* margin-bottom: 5px; */
+        }
+        .menu li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            padding-left: 8px;
+        }
+        .logo {
+            justify-content: center;
+            height: 100px;
+            width: 920px;
+            font-size: 50px;
+            padding-left: 100px;
+            list-style-type: none;
+            background-image: url("/web-3-1/images/lighthouselogo.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+            color: #00005d;
+            font-weight: 700;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+        }
+        .text {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            padding-left: 13px;
+            min-width: 300px;
+            flex-direction: column;
+        }
+        .photo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+        .photo{
+            padding: 10px;
+            background-color: white;
+        }
+        h2 {
+            margin-bottom: 15px; /* 段落间距 */
+            color: #869dc7;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 15px; /* 段落间距 */
+            line-height: 1.5;
+        }
+        .text{
+            width: 550px;
+        }
+        .bottom{
+            height: 60px;
+            width: 920px;
+            background-color: #869dc7;
+            color: #00005d;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="title">
+        <li class="logo">Lighthouse Island Bistro</li>
+    </ul>
+    <div class="content">
+        <ul class="menu">
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Directions</li>
+            <li>Contact</li>
+        </ul>
+        <div class="text">
+            <h2>Locally Roasted Free-Trade Coffee</h2>
+            <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+            
+            <h2>Specialty Pastries</h2>
+            <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+                
+            <h2>Lunchtime is Anytime</h2>
+            <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+                
+            <h2>Panoramic View</h2>
+            <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+        </div>
+        <div class="photo">
+            <img src="/web-3-1/images/lighthouseisland.jpg" alt="Lighthouse Island">
+        </div>
+    </div>
+    
+    <div class="bottom">Copyright @ 2021</div>
+</body>
+</html>

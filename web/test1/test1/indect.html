@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Web 技术及应用</h1>
+    <video controls src="http://172.29.1.120/web/90th.mp4"></video><br>
+    <audio controls src="音频/xiaoge.mp3"></audio><!--音频放在了文件夹里-->
+    <details>此视频介绍了西北农林科技大学的学校定位，学科特点等等</details>
+    <summary>此视频为西北农林科技大学详细情况介绍</summary><br>
+    <fieldset>
+        <legend>fieldsetf的用法：</legend>
+        用于在表单中对相关元素进行分组，常配合legend标签为分组添加标题，提升表单可读性和语义化。
+    </fieldset><br>
+    <p3>太阳系中的行星的一些数据，（资料取自NASA行星数据-公制，图片取自NASA图片库。）</p3><br>
+
+    <table border="1">
+        <caption>太阳系中的行星的一些数据，（资料取自NASA行星数据-公制，图片取自NASA图片库。）</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>名字</th>
+                <th>图片</th>
+                <th>质量(10<sup>24</sup>kg)</th>
+                <th>直径(km)</th>
+                <th>密度(kg/m<sup>3</sup>)</th>
+                <th>重力(m/s<sup>2</sup>)</th>
+                <th>天长(小时)</th>
+                <th>与太阳距离(10<sup>6</sup>km)</th>
+                <th>平均温度(℃)</th>
+                <th>卫星数量</th>
+                <th>备注</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4" valign="middle">类地行星</td>
+                <td>水星</td>
+                <td><img src="images/行星/mercury.jpg"></td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167</td>
+                <td>0</td>
+                <td>距太阳最近</td>
+            </tr>
+            <tr>
+                <td>金星</td>
+                <td><img src="images/行星/venus.jpg"></td>
+                <td>4.87</td>
+                <td>12,104</td>
+                <td>5243</td>
+                <td>8.9</td>
+                <td>2802.0</td>
+                <td>108.2</td>
+                <td>464</td>
+                <td>0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>地球</td>
+                <td><img src="images/行星/earth.jpg"></td>
+                <td>5.97</td>
+                <td>12,756</td>
+                <td>5514</td>
+                <td>9.8</td>
+                <td>24.0</td>
+                <td>149.6</td>
+                <td>15</td>
+                <td>1</td>
+                <td>我们的世界</td>
+            </tr>
+            <tr>
+                <td>火星</td>
+                <td><img src="images/行星/mars.jpg"></td>
+                <td>0.642</td>
+                <td>6,792</td>
+                <td>3933</td>
+                <td>3.7</td>
+                <td>24.7</td>
+                <td>227.9</td>
+                <td>-65</td>
+                <td>2</td>
+                <td>红色星球</td>
+            </tr>
+            <!-- 类木行星分组 -->
+            <tr>
+                <td rowspan="5" valign="middle">类木行星</td>
+                <td>木星</td>
+                <td><img src="images/行星/jupiter.jpg"></td>
+                <td>1898</td>
+                <td>142,984</td>
+                <td>1326</td>
+                <td>23.1</td>
+                <td>9.9</td>
+                <td>778.6</td>
+                <td>-110</td>
+                <td>67</td>
+                <td>太阳系最大</td>
+            </tr>
+            <tr>
+                <td>土星</td>
+                <td><img src="images/行星/saturn.jpg"></td>
+                <td>568</td>
+                <td>120,536</td>
+                <td>687</td>
+                <td>9.0</td>
+                <td>10.7</td>
+                <td>1433.5</td>
+                <td>-140</td>
+                <td>62</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>天王星</td>
+                <td><img src="images/行星/uranus.jpg"></td>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1271</td>
+                <td>8.7</td>
+                <td>17.2</td>
+                <td>2872.5</td>
+                <td>-195</td>
+                <td>27</td>
+                <td></td>
+            </tr <tr>
+            <td>海王星</td>
+            <td><img src="images/行星/neptune.jpg"></td>
+            <td>102</td>
+            <td>49,528</td>
+            <td>1638</td>
+            <td>11.0</td>
+            <td>16.1</td>
+            <td>4495.1</td>
+            <td>-200</td>
+            <td>14</td>
+            <td></td>
+            </tr>
+            <tr>
+                <td>天王星</td>
+                <td><img src="images/行星/uranus.jpg" alt="图片"></td>
+                <td>0.0146</td>
+                <td>2,370</td>
+                <td>2095</td>
+                <td>0.7</td>
+                <td>153.3</td>
+                <td>5906.4</td>
+                <td>-225</td>
+                <td>5</td>
+                <td>2006年降格，但尚存争议</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="http://www.baidu.com" target="_blank" title="格力太阳能喜获国家免检产品称号">百度_超链接</a>
+    <form action="https://mock.apifox.cn/m1/1893392-0-default/form/process1" method="get">
+        <fieldset style="width: 50%;margin:auto">
+            <legend>个人资料</legend>
+            姓名：<input type="text" id="username"><br><br>
+            性别：<input type="radio" id="male" name="gender" value="男">
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="女">
+            <label for="female">女</label><br><br>
+            性别:(label)
+            <label for="boy"> 男
+                <input type="radio" id="boy" name="gender" checked="checked" />
+            </label>
+            <label for="girl"> 女 <input type="radio" id="girl" name="gender" /></label><br><br>
+
+                出生日期：<input type="date" id="birthday"><br><br>
+                主要经历：<textarea name="history" id="history"></textarea><br><br>
+                兴趣爱好：
+                <input type="checkbox" name="hobby" value="唱歌">唱歌
+                <input type="checkbox" name="hobby" value="打球">打球
+                <input type="checkbox" name="hobby" value="下棋">下棋
+                <input type="checkbox" name="hobby" value="上网">上网
+                <input type="checkbox" name="hobby" value="购物">购物<br><br>
+        </fieldset>
+        <fieldset style="width: 50%;margin:auto">
+            <legend>专业与课程</legend>
+            所学专业：
+            <select name="major" id="" size="1">
+                <option value="计算机科学与技术">计算机科学与技术</option>
+                <option value="软件工程">软件工程</option>
+                <option value="数据科学与应用">数据科学与应用</option>
+            </select><br><br>
+            最喜欢的课程：
+            <select name="course" id="" size="4">
+                <option value="计算机网络"></option>
+                <option value="数据库原理与应用">数据库原理与应用</option>
+                <option value="计算机组成原理">计算机组成原理</option>
+                <option value="C语言程序设计">C语言程序设计</option>
+                <option value="编译原理">编译原理</option>
+                <option value="面向对象设计与分析">面向对象设计与分析</option>
+            </select><br><br>
+        </fieldset>
+        <div style="text-align: center;">
+            <input type="submit" name="btn1" value="提交">
+            <input type="reset" name="btn2" value="重填">
+        </div>
+    </form>
+
+    <div class="artist-info">
+        <h1>周杰伦</h1>
+        <p>周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，华语流行男歌手、演员、词曲创作人、MV及电影导演、编剧及制作人。</p>
+        <ul>
+            <li>单曲 399</li>
+            <li>专辑 31</li>
+        </ul>
+        <button type="button">
+            <img src="/images/jay/images/play.png" alt="播放按钮" width="90" height="35">
+        </button>
+        <button type="button">
+            <img src="/images/jay/images/follow.png" alt="关注按钮" width="90" height="35">
+        </button>
+
+    </div>
+
+    <div class="hot-songs">
+        <h2>热门歌曲</h2>
+        <a href="#">更多>></a>
+        <h3>周杰伦热门歌曲列表</h3>
+        <table>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>排名</< /th>
+                        <th>歌曲</< /th>
+                        <th>专辑</< /th>
+                        <th>时长</< /th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>不爱我就拉倒</td>
+                        <td>不爱我就拉倒</td>
+                        <td>04:05</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>等你下课(with 杨瑞代)</td>
+                        <td>等你下课</td>
+                        <td>04:30</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>惊叹号(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>03:16</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>最后的战役(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>04:09</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>龙拳(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>03:29</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>天台(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>01:48</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>打架舞(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>00:49</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>快门慢舞(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>02:03</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>哪里都是你(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>04:37</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>不能说的秘密(Live)</td>
+                        <td>周杰伦魔天伦世界巡回演唱会</td>
+                        <td>04:57</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <div class="albums">
+        <h2>专辑</h2>
+        <a href="#">更多>></a><br>
+        <dl>
+            <dd><img src="images/jay/images/T002R300x300M000001CnPE31iJ899.jpg" alt="不爱我就拉倒专辑封面"></dd>
+            <dt>不爱我就拉倒</dt>
+            <dd>
+                <dl>
+                    <dt>语言：</dt>
+                    <dd>国语</dd>
+                    <dt>发行时间：</dt>
+                    <dd>2018-05-15</dd>
+                    <dt>唱片公司：</dt>
+                    <dd>杰威尔音乐有限公司</dd>
+                </dl>
+            </dd>
+        </dl>
+        <dl>
+            <dd><img src="images/jay/images/T002R300x300M000003bSL0v4bpKAx.jpg" alt="等你下课专辑封面"></dd>
+            <dt>等你下课</dt>
+            <dd>
+                <dl>
+                    <dt>语言：</dt>
+                    <dd>国语</dd>
+                    <dt>发行时间：</dt>
+                    <dd>2016-06-24</dd>
+                    <dt>唱片公司：</dt>
+                    <dd>杰威尔音乐有限公司</dd>
+                </dl>
+            </dd>
+        </dl>
+        <dl>
+            <dd><img src="images/jay/images/T002R300x300M000003RMaRI1iFoYd.jpg" alt="英雄专辑封面"></dd>
+            <dt>英雄</dt>
+            <dd>
+                <dl>
+                    <dt>语言：</dt>
+                    <dd>国语</dd>
+                    <dt>发行时间：</dt>
+                    <dd>2016-03-24</dd>
+                    <dt>唱片公司：</dt>
+                    <dd>杰威尔音乐有限公司</dd>
+                </dl>
+            </dd>
+        </dl>
+        <dl>
+            <dd><img src="images/jay/images/T002R300x300M000004c8Md02WHHju.jpg" alt="周杰伦魔天伦世界巡回演唱会封面"></dd>
+            <dt>周杰伦魔天伦世界巡回演唱会</dt>
+            <dd>
+                <dl>
+                    <dt>语言：</dt>
+                    <dd>国语</dd>
+                    <dt>发行时间：</dt>
+                    <dd>2016-05-10</dd>
+                    <dt>唱片公司：</dt>
+                    <dd>杰威尔音乐有限公司</dd>
+                </dl>
+            </dd>
+        </dl>
+        <dl>
+            <dd><img src="images/jay/images/202207131608159472.jpg" alt="最伟大的作品专辑封面"></dd>
+            <dt>最伟大的作品</dt>
+            <dd>
+                <dl>
+                    <dt>语言：</dt>
+                    <dd>国语</dd>
+                    <dt>发行时间：</dt>
+                    <dd>2022-07-15</dd>
+                    <dt>唱片公司：</dt>
+                    <dd>杰威尔音乐有限公司</dd>
+                </dl>
+            </dd>
+        </dl>
+    </div>
+</body>
+
+</html>

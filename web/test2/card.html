@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    body{
+        margin: 100px;
+        width: 450px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        border:2px solid  #333;
+        box-shadow: 20px;
+    }
+    .top{
+        flex-direction: row;
+        display: flex;
+    }
+    .photo {
+        height: 100px;
+        width: 150px;
+        position: relative;
+        padding-left: 100px;
+        padding-top: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/实验2-实验素材/实验2-3/头像.jpg);
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    .photo:hover {
+        transform: scale(1.05);
+    }
+    ul{
+        padding: 20px;
+        font-size: 20px;
+        text-align: left;
+        list-style-type: none;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        width: 25px;  
+        height: 25px;
+        transition: background-color 0.3s ease;
+        transition: transform 0.3s ease;
+    }
+    img:hover {
+        transform: scale(1.05);
+        filter: 
+        brightness(0.5)     /* 变暗 */
+    }
+</style>
+<body>
+    <div class="top">
+        <div class="photo"></div>   
+        <ul class="information">
+            <pre class="name">姓名：吉伊      职位:经理</pre>
+            <pre class="age">年龄：18        政治面貌：群众</pre>
+            <div class="a">
+                <img src="/实验2-实验素材/qq-1.png" alt="qq">
+                <pre class="qq">QQ:3286207374</pre>
+            </div>
+            <div class="b">
+                <img src="/实验2-实验素材/wechat-1.png" alt="wechat">
+                <pre class="wechat">微信:Dxinglinnan</pre>
+            </div>
+            <div class="c">
+                <img src="/实验2-实验素材/weibo-1.png" alt="weibo">
+                <pre class="weibo">微博:1234567</pre>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
